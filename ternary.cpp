@@ -1,31 +1,47 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-//     int age=10;
-//    int value = (age>18) ? 100 : 200;
-//     cout << "Value: " << value << endl;
+void EvenOdd(int num){
+    if (num%2 ==0) {
+    cout<< "The number is Even" <<endl;
+    }
+    else{
+        cout<< "The number is odd" <<endl;
+    }
+}
 
-int index = 78;
-switch (index){
-    case 1: cout<<"monday"<<endl;
-    break;
-    case 2: cout<<"tuesday"<<endl;
-    break;
-    case 3: cout<<"wedenday"<<endl;
-    break;
-    case 4: cout<<"thursday"<<endl;
-    break;
-    case 5: cout<<"friday"<<endl;
-    break;
-    case 6: cout<<"saturday"<<endl;
-    break;
-    case 7: cout<<"sunday"<<endl;
-    break;
-    default: cout<<"babbarday"<<endl;
+// check the number is positive or negative
+
+void Checknumberpositiveornegative(int num){
+    if (num > 0){
+        cout<< "The number is positive" <<endl;
+    
+    }
+    else if(num<0){
+        cout<< "the number is negative" <<endl;
+    }
+    else{
+        cout<< "the number is zero" <<endl;
+    }
+
+}
+
+
+//print the average number of three numbers
+
+int printAvg(int a,int b, int c){
+    int avg = (a+b+c)/3;
+    // cout<<  "The avg is " << avg << endl;
+    return avg;
+}
+
+
+int main() {
+    // PrintThakare();
+    // Checknumberpositiveornegative(0);
+   int answer =  printAvg(10,20,30);
+    cout<< "The avg is " << answer << endl;
+
+    // EvenOdd(2
     return 0;
 }
-}
-
-// This program demonstrates the use of the ternary operator in C++. It checks if the variable 'age' is greater than 18.
-//
