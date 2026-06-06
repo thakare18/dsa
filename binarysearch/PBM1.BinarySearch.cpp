@@ -50,7 +50,7 @@ public:
         while(s <= e) {
 
             // Step 1: Find Mid
-            int mid = s + (e - s) / 2;
+            int mid = s + (e - s) / 2; // To avoid overflow, we use s + (e - s) / 2 instead of (s + e) / 2
 
             // Step 2: Check Mid
             if(arr[mid] == target) {
