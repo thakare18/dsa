@@ -54,7 +54,7 @@ public:
 
             // Step 2: Check Mid
             if(arr[mid] == target) {
-                return mid;
+                return mid; // that return the element position in array
             }
 
             // Step 3: Go Left
