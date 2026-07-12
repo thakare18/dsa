@@ -91,11 +91,11 @@ int findElementInNearlySortedArray(const vector<int>& arr, int K) {
 
         // move right
         if(K > arr[mid]) {
-            s = mid + 2;
+            s = mid + 2; // mid + 2 for optimization // because we have already checked mid, mid+1
         }
         else {
             // move left
-            e = mid - 2;
+            e = mid - 2; // mid - 2 for optimization
         }
     }
 
