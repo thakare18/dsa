@@ -67,3 +67,22 @@ return true; // if the loop is completed then it means saare characters match ho
 bool ans = palindrome(arr, 50);
 
 cout << "Is the string a palindrome? " << ans << endl;
+
+
+int main() {
+
+    string str;
+    string name = "Hello";
+
+    getline(cin, str);
+    cout << name[0] << endl; 
+
+    cout << "length of string is: " << str.length() << endl;
+
+    str.push_back('a'); // to add a character at the end of the string
+    str.pop_back(); // to remove the last character of the string
+
+
+    string name = "abcdefghi",
+    cout << name.substr(2, 5) << endl; // strt from index 2 and take 5 characters
+}
