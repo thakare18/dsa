@@ -1,7 +1,7 @@
 class Solution {
 public:
     int countNegatives(vector<vector<int>>& grid) {
-
+//binary search
         int rows = grid.size();
         int cols = grid[0].size();
 
